@@ -36,37 +36,57 @@ class Human2(Human):
     def aldiyar_gay(self):
         print(f'Возраст: {self.age}')
 
-    # def wh(self):
-    #     while True:
-    #         Human2.aldik(self)
-
-
-
-    def aldik(self):                                            # не знаю почему так говорили что не правильно
-        while True:                                             # он ведь работает
-            print(f'1-возраст\n'
+    def wh(self):
+        while True:
+            Human2.aldik(self)
+    def aldik(self):
+        print(f'1-возраст\n'
                   f'2-имя\n'
                   f'3-дата рождения\n'
                   f'4-машина\n'
                   f'5-ориентация\n'
                   f'6-выход')
-            a = int(input('Введите число: '))
-            if a == 1:
-                Human2.emka(self)
-            elif a == 2:
-                Human2.aldiyar_gay(self)
-            elif a == 3:
-                Human2.year(self)
-            elif a == 4:
-                Human2.car(self)
-            elif a == 5:
-                Human2.__orientation(self)
-            elif a == 6:
-                break
+        a = int(input('Введите число: '))
+        if a == 1:
+            Human2.emka(self)
+        elif a == 2:
+            Human2.aldiyar_gay(self)
+        elif a == 3:
+            Human2.year(self)
+        elif a == 4:
+            Human2.car(self)
+        elif a == 5:
+            Human2.__orientation(self)
+        elif a == 6:
+            quit()                                                # можно ещё через exit()
+
+
+    # def aldik(self):                                            # не знаю почему так говорили что не правильно
+    #     while True:                                             # он ведь работает
+    #         print(f'1-возраст\n'
+    #               f'2-имя\n'
+    #               f'3-дата рождения\n'
+    #               f'4-машина\n'
+    #               f'5-ориентация\n'
+    #               f'6-выход')
+    #         a = int(input('Введите число: '))
+    #         if a == 1:
+    #             Human2.emka(self)
+    #         elif a == 2:
+    #             Human2.aldiyar_gay(self)
+    #         elif a == 3:
+    #             Human2.year(self)
+    #         elif a == 4:
+    #             Human2.car(self)
+    #         elif a == 5:
+    #             Human2.__orientation(self)
+    #         elif a == 6:
+    #             break
     def lena(self):
         print(len(dir(Human2)))
 
 
 w = Human2('Mirdjalalydin', 23)
-w.aldik()
 w.lena()
+w.wh()
+
